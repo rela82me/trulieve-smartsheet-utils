@@ -1,5 +1,22 @@
-venv/
-.env
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+env/
+venv/
+.smartsheet-env/
+.smartsheet-logs/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Excel output files
+*.xlsx
+
+# OS stuff
 .DS_Store
+Thumbs.db
