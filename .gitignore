@@ -11,7 +11,7 @@ venv/
 .smartsheet-logs/
 *.env
 # VS Code
-.vscode/
+*.vscode/
 *.code-workspace
 
 # Excel output files
