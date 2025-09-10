@@ -9,7 +9,7 @@ env/
 venv/
 .smartsheet-env/
 .smartsheet-logs/
-
+*.env
 # VS Code
 .vscode/
 *.code-workspace

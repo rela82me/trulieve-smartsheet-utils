@@ -2,7 +2,10 @@
 PROFESSIONAL GRADE REFACTOR + .env Support + Fixes v3 (Datetime Focus)
 Utilization.py
 """
+# This script analyzes Smartsheet workspaces and sheets for utilization metrics.
+# It fetches sheet data, calculates various metrics, and saves the results to an Excel file.
 
+# --- Script library imports ---
 import os
 import argparse
 import traceback
@@ -59,6 +62,10 @@ class SheetMetrics(NamedTuple):
     resource_management_enabled: Optional[bool]
     from_template: Optional[bool]
     error: Optional[str] = None
+
+# --- Processing Context --- 
+# This class encapsulates the context for processing, including the Smartsheet client and shutdown event.
+# It also includes a flag for quiet mode and a list for error logs.
 
 class ProcessingContext:
     def __init__(self, client: smartsheet.Smartsheet, quiet_mode: bool = False):
